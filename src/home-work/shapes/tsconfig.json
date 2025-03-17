@@ -1,0 +1,37 @@
+{
+  "display": "Configuration for Graphics Programming in PAI",
+  "compilerOptions": {
+    "types": ["node", "jest"],
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "baseUrl": "./src",  // La raíz de tus archivos fuente es 'src'
+    "skipLibCheck": true,
+    "allowJs": true,
+    "outDir": "./dist",  // Generar la salida en 'dist'
+    "declaration": false,  // No generar archivos de declaración .d.ts
+    "alwaysStrict": true,  
+    "strict": true,  
+    "lib": ["ESNext", "dom"],  
+    "esModuleInterop": true,
+    "noImplicitAny": true,  
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*.ts"
+, "server.ts"  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "lib",
+    "test",
+    "public",
+    "dist",
+    "docs",
+    "search.js",
+    "main.js",
+    "app.js"
+  ]
+}
